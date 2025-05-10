@@ -1,54 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tianzuo (William) Hu – Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tianzuo Hu – Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <canvas id="bg"></canvas>
-
-  <div class="door-container">
-  <div class="door-message">
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <h1 id="typed-name" style="animation: pulseOnce 1.5s ease-in-out forwards;">TIANZUO HU</h1>
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/University_of_California%2C_Davis_seal.svg/120px-University_of_California%2C_Davis_seal.svg.png"
-           alt="UC Davis Logo" width="60" style="margin-top: 0.5rem;" />
+<!-- 🚪 Entrance -->
+<div class="door-container">
+    <div class="door-message">
+        <h1 id="typed-name">TIANZUO HU</h1>
+        <h1 id="typed-text"><span class="cursor">|</span></h1>
     </div>
-    
-    <p style="font-size: 1.1rem; margin-top: 0.3rem; color: white;">
-      Undergraduate at UC Davis majoring in <strong>Statistics</strong><br>
-      Minoring in <strong>Computer Science</strong> and <strong>Economics</strong><br>
-      <em>Expected Graduation: June 2026</em>
-    </p>
-    
-    <p style="font-size: 1rem; opacity: 0.95; margin-top: 0.3rem; color: white;">
-      Interested in <strong>Data Science</strong>, <strong>Quantitative Finance</strong>,<br>
-      <strong>Financial Derivatives</strong>, <strong>Machine Learning</strong>,<br>
-      <strong>Reinforcement Learning</strong> and <strong>Large Language Models</strong>
-    </p>
-    
-    <h1 id="typed-text"><span class="cursor">|</span></h1>
-  </div>
-
-  <div class="door-backlight"></div>
-  <div class="door left-door"></div>
-  <div class="door right-door"></div>
+    <div class="door-backlight"></div>
+    <div class="door left-door"></div>
+    <div class="door right-door"></div>
 </div>
 
+<!-- 🎠 Carousel -->
+<div class="carousel-container">
+    <div class="ceiling-light left"></div>
+    <div class="ceiling-light center"></div>
+    <div class="ceiling-light right"></div>
+    <div class="carousel">
+        <!-- Page 1: Intro -->
+        <div class="card">
+            <div class="firstcard">
+                <h1>Tianzuo Hu</h1>
+                <h2>UC Davis | Statistics Major</h2>
+                <p style="font-size: 20px;">
+                    Minor in Computer Science and Economics<br>
+                    Expected Graduation: June 2026
+                </p>
+                <p>
+                    Passionate about Data Science, Quantitative Finance,<br>
+                    Financial Derivatives, Machine Learning, Reinforcement Learning, and LLMs
+                </p>
+                <div class="icons">
+                    <div class="linkedin_icons">
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                            <img src="linkedin-icon.svg" alt="LinkedIn" width="24" height="24">
+                        </a>
+                    </div>
+                    <div class="github_icons">
+                        <a href="https://github.com/yourgithub" target="_blank">
+                            <img src="github-icon.svg" alt="GitHub" width="24" height="24">
+                        </a>
+                    </div>
+                    <div class="resume_icons">
+                        <a href="TianzuoHu-Resume.pdf" download>
+                            <img src="resume-icon.svg" alt="Resume" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Page 2: Profile Summary -->
+        <div class="card">
+            <div class="secondcard">
+                <h1>Profile Summary</h1>
+                <h2>
+                    Motivated and analytical UC Davis undergraduate<br>
+                    Experienced in applied statistics and programming for data analysis and modeling<br>
+                    Passionate about technology-driven finance, large-scale data processing, and AI applications
+                </h2>
+                <h3>Key Skills:</h3>
+                <p>
+                    <b>Languages:</b> Python, R, C++, SQL, Java<br>
+                    <b>Tools:</b> Git, VS Code, Jupyter, Excel, Tableau<br>
+                    <b>Libraries:</b> pandas, NumPy, matplotlib, scikit-learn, PyTorch<br>
+                    <b>Domain Knowledge:</b> Quantitative Finance, Derivatives, Statistical Inference, LLMs, Reinforcement Learning<br>
+                    <b>Languages:</b> English (Fluent), Mandarin Chinese (Native)<br>
+                </p>
+                <a href="TianzuoHu-Resume.pdf" class="resume-link" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <div class="selection">
-    <a href="about.html" class="select-card">About Me</a>
-    <a href="projects.html" class="select-card">Projects</a>
-    <a href="contact.html" class="select-card">Contact</a>
-  </div>
-
-  <footer style="position:absolute; bottom:1rem; width:100%; text-align:center; font-size:0.9rem; color:var(--fg-color); opacity:0.5;">
-    © 2025 Tianzuo Hu. All rights reserved.
-  </footer>
+<script src="script.js"></script>
 </body>
 </html>
