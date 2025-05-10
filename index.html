@@ -1,114 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Tianzuo Hu's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tianzuo Hu – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-<!-- 🚪 Entrance -->
-<div class="door-container">
+  <!-- Entrance Animation -->
+  <div class="door-container">
     <div class="door-message">
-        <h1 id="typed-name">TIANZUO HU</h1>
-        <h1 id="typed-text"><span class="cursor">|</span></h1>
+      <h1 id="typed-name">TIANZUO HU</h1>
+      <h1 id="typed-text"><span class="cursor">|</span></h1>
     </div>
     <div class="door-backlight"></div>
     <div class="door left-door"></div>
     <div class="door right-door"></div>
-</div>
+  </div>
 
-<!-- 🎠 Carousel -->
-<div class="carousel-container">
-    <div class="ceiling-light left"></div>
-    <div class="ceiling-light center"></div>
-    <div class="ceiling-light right"></div>
-    <div class="carousel">
-        <!--page 1: Intro-->
-        <div class="card">
-            <div class="firstcard">
-                <h1>Tianzuo Hu</h1>
-                <h2>Applied Statistics & Computer Science @ UC Davis</h2>
-                <p style="font-size:22px;">
-                    (Graduating June 2026)<br>
-                    <strong>Email:</strong> hutianzuo123@gmail.com<br>
-                    <strong>Mobile:</strong> +1 (530) 601-3036
-                </p>
-                <div class="icons">
-                    <div class="linkedin_icons">
-                        <a href="https://www.linkedin.com/in/tianzuo-hu-6b8225294/" target="_blank">
-                            <!-- LinkedIn SVG -->
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C3.36 3.5 2 4.86 2 6.48s1.36 2.98 2.98 2.98S7.96 8.1 7.96 6.48 6.6 3.5 4.98 3.5zM2 21h6V9H2v12zM9 21h6v-6c0-1.3.7-2 1.8-2s1.8.7 1.8 2v6h6v-7c0-3.7-2-5-4.6-5-2 0-2.8 1.1-3.2 1.8h-.1V9H9c.1 1 0 12 0 12z"/></svg>
-                        </a>
-                    </div>
-                    <div class="github_icons">
-                        <a href="https://github.com/williamhu" target="_blank">
-                            <!-- GitHub SVG -->
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6 0-.3 0-1.1 0-2.0-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1.0.1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0 0 1.0-.3 3.3 1.2.9-.3 1.8-.4 2.7-.4s1.8.1 2.7.4c2.3-1.5 3.3-1.2 3.3-1.2.7.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.3.8 1.0.8 2.2 0 1.6 0 2.9 0 3.3 0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>                
-        </div>
-
-        <!--page 2: Profile Summary-->
-        <div class="card">
-            <div class="secondcard">
-                <h1>Profile Summary</h1>
-                <h2>
-                    Undergraduate pursuing Applied Statistics & CS at UC Davis.<br><br>
-                    Top 0.5% in Kaggle Credit Risk competition.<br><br>
-                    Quant Pricing Intern at Haitong Securities and Equity Research Intern at Guotai Junan.
-                </h2>
-                <h3>Key Skills:</h3>
-                <p>
-                    <b>Python, R, SQL, C++</b><br>
-                    <b>Machine Learning:</b> XGBoost, LightGBM, Random Forest<br>
-                    <b>Web Dev:</b> Django, Flask, React<br>
-                    <b>Tools:</b> Git, GitHub, Tableau, Tushare, Snowball
-                </p>
-                <a href="resume.pdf" class="resume-link" download>Download Resume</a>
-            </div>
-        </div>
-
-        <!--page 3: Job Experience-->
-        <div class="card">
-            <div class="experience-card">
-                <h2>Haitong Securities Co., Ltd</h2>
-                <h3>Derivative Pricing Intern</h3>
-                <p class="duration">Jun 2024 - Aug 2024</p>
-                <ul>
-                    <li>Priced OTC structured products using tree methods and ML algorithms.</li>
-                    <li>Built decision tree, random forest, BP neural network, XGBoost for IV surface modeling.</li>
-                    <li>Cleaned and analyzed 50k CSI 300 ETF data with Tushare crawler.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="card">
-            <div class="experience-card">
-                <h2>Guotai Junan Securities Co., Ltd</h2>
-                <h3>Equity Research Intern</h3>
-                <p class="duration">Apr 2024 - Jun 2024</p>
-                <ul>
-                    <li>Authored 30-page industry reports on PCB and IGBT technology.</li>
-                    <li>Performed financial analysis using Choice, Snowball, annual reports.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Additional sections to be filled similarly -->
-    </div>
-
-    <div class="card-instruction desktop-only">
-        <p>Hover or click cards to explore</p>
-    </div>
-    <p class="card-instruction mobile-only">Swipe or tap cards to explore</p>
-    <div class="carousel-indicators" id="carousel-indicators"></div>
-    <div class="floor-light"></div>
-    <div class="spotlight"></div>
-</div>
-<script src="script.js"></script>
+  <!-- Selection UI (visible after animation) -->
+  <div class="selection">
+    <a href="about.html" class="select-card">About Me</a>
+    <a href="projects.html" class="select-card">Projects</a>
+    <a href="contact.html" class="select-card">Contact Me</a>
+  </div>
 </body>
 </html>
