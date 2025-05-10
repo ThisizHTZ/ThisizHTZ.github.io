@@ -47,39 +47,6 @@ button {
 button:hover {
   background: var(--accent-light);
 }
-/*改变字体位置*/
-/* 新增：将 door-message 居中显示，并跳动文字 */
-.door-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.door-message {
-  text-align: center;
-  z-index: 2;
-  animation: pop-in 1.5s ease-out;
-}
-
-.door-message h1 {
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  color: var(--accent);
-  animation: pulse 2s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.05); }
-}
-
-@keyframes pop-in {
-  0% { opacity: 0; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1); }
-}
 
 
 /* =============== 门 动画 =============== */
