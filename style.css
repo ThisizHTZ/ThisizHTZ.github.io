@@ -134,3 +134,33 @@ button:hover {
   color: var(--fg-color);
 }
 .back-link:hover { color: var(--accent); }
+/* =============== 修复门动画时文字垂直居中 + 字体跳动 =============== */
+.door-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.door-message {
+  z-index: 10;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.door-message h1 {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  color: var(--accent);
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.07); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
